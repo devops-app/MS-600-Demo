@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Contoso"
+    },
+    "libraryName": "conversationalBot",
+    "generator-version": "4.0.1"
+  }
+}
