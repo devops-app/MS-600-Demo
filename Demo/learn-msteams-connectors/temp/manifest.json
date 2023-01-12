@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "09644120-9269-11ed-b94e-3faeef51a760",
+  "version": "0.0.1",
+  "packageName": "myfirstteamsconnector",
+  "developer": {
+    "name": "Contoso",
+    "websiteUrl": "https://1804-103-177-47-195.ngrok.io",
+    "privacyUrl": "https://1804-103-177-47-195.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://1804-103-177-47-195.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "My First Teams Connector",
+    "full": "My First Teams Connector"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "connectors": [
+    {
+      "connectorId": "00000000-0000-0000-0000-000000000000",
+      "configurationUrl": "https://1804-103-177-47-195.ngrok.io/myFirstTeamsConnector/config.html",
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "1804-103-177-47-195.ngrok.io"
+  ],
+  "showLoadingIndicator": false
+}

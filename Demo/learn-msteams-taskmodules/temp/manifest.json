@@ -1,0 +1,68 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "32727990-9252-11ed-a7f1-f73f24b6b065",
+  "version": "0.0.3",
+  "packageName": "youtubeplayer",
+  "developer": {
+    "name": "Contoso",
+    "websiteUrl": "https://2086-103-177-47-195.ngrok.io",
+    "privacyUrl": "https://2086-103-177-47-195.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://2086-103-177-47-195.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "YouTube Player",
+    "full": "YouTube Player"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "e095bda2-1c22-408e-865d-7895fb3dc0d8",
+      "name": "YouTube Player 1",
+      "contentUrl": "https://2086-103-177-47-195.ngrok.io/youTubePlayer1Tab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+"bots": [
+  {
+    "botId": "150df263-63eb-4559-aaec-c642283df96a",
+    "scopes": [
+      "personal"
+    ],
+    "supportsFiles": false,
+    "isNotificationOnly": false,
+    "commandLists": [
+      {
+        "scopes": [ "personal" ],
+        "commands": [
+          {
+            "title": "MentionMe",
+            "description": "Sends message with @mention of the sender"
+          }
+        ]
+      }
+    ]
+  }
+],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "2086-103-177-47-195.ngrok.io"
+  ],
+  "showLoadingIndicator": false
+}
